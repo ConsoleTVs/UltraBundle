@@ -6,6 +6,7 @@
     "repository": "https://github.com/ConsoleTVs/UltraBundle",
     "author": "Èrik Campobadal Forés <soc@erik.cat>",
     "license": "MIT",
+    "types": "dist/index.d.ts",
     "scripts": {
         "build": "tsc",
         "watch": "tsc --watch",
