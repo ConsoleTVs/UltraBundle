@@ -1,0 +1,15 @@
+{
+    "name": "example",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "author": "Èrik Campobadal Forés <soc@erik.cat>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "ultrabundle",
+        "watch": "ultrabundle --watch",
+        "prod": "ultrabundle --optimize"
+    },
+    "devDependencies": {
+        "ultrabundle": "file:.."
+    }
+}
