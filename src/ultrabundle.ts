@@ -285,6 +285,6 @@ export class UltraBundle {
      * @memberof UltraBundle
      */
     async bundle() {
-        return Promise.all(this.bundles.map(b => b.bundle()))
+        for (const bundle of this.bundles) await bundle.bundle()
     }
 }

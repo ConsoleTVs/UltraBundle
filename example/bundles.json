@@ -2,5 +2,10 @@
     {
         "input": "src/index.ts",
         "output": "dist/output.js"
+    },
+	{
+        "input": "src/index.ts",
+        "output": "dist/output.es.js",
+		"format": "es"
     }
 ]
