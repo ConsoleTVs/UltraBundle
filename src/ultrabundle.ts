@@ -92,7 +92,7 @@ export class Bundle {
         return {
             file: this.config.output,
             sourcemap: this.config.sourcemap,
-            format: 'umd',
+            format: this.config.format,
             name: this.packageJSON?.name ?? 'bundle',
             globals: this.config.globals
         }

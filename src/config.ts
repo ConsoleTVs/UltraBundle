@@ -65,6 +65,25 @@ export interface UltraBundleConfig {
     output: string
 
     /**
+     * Determine the format of the output bundle.
+     * Defaults to 'umd'.
+     *
+     * @type {("amd" | "cjs" | "commonjs" | "es" | "esm" | "iife" | "module" | "system" | "umd" | undefined)}
+     * @memberof UltraBundleConfig
+     */
+    format:
+        | 'amd'
+        | 'cjs'
+        | 'commonjs'
+        | 'es'
+        | 'esm'
+        | 'iife'
+        | 'module'
+        | 'system'
+        | 'umd'
+        | undefined
+
+    /**
      * Determine if the bundle should include a source map.
      *
      * @type {boolean}
@@ -106,6 +125,7 @@ export interface UltraBundleConfig {
 export const defaultConfig: UltraBundleConfig = {
     input: '',
     output: '',
+    format: 'umd',
     sourcemap: false,
     external: [],
     globals: {},
